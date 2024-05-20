@@ -23,6 +23,6 @@ function calcularPresupuesto() {
     if (servicioSelecionado.length > 0) {
         alert(`Has seleccionado los siguientes items:\n\n${servicioSelecionado.join('\n')}\n\nEl precio total es: ${total} USD`);
     } else {
-        alert("No has seleccionado ningún item.");
+        alert("No has seleccionado ningún Servicio.");
     }
 }
