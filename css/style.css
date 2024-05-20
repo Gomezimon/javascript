@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-image: linear-gradient(to right top, #272727, #272431, #28213a, #2a1c43, #2d164a);
+    color: white;
+}
+header h1 {
+    margin: 20px;
+}
+body{
+    background-color: rgb(34, 34, 34);
+    background-size: 100%;
+}
+main{
+    margin: 20px;
+    color: white;
+}
+
+section li {
+    list-style: none;
+}
