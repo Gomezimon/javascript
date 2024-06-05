@@ -14,7 +14,7 @@ function calcularPresupuesto() {
 
     servicio.forEach(item => {
         let respuesta = prompt(`¿Deseas incluir "${item}" por ${precios[item]} USD? (sí/no)`);
-        if (respuesta.toLowerCase() === "si") {
+        if (respuesta.toLowerCase() === "si" || respuesta.toLowerCase() === "sí") {
             total += precios[item];
             servicioSelecionado.push(item);
         }
@@ -26,3 +26,6 @@ function calcularPresupuesto() {
         alert("No has seleccionado ningún Servicio.");
     }
 }
+const nombre = prompt ("Ingrese su nombre");
+const titulo = document.getElementById("titulo");
+titulo.innerText = "Hola " + nombre + ", calcula tu presupuesto.";

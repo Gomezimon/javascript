@@ -31,7 +31,33 @@ section li {
     border-style: none;
     border-radius: 20px;
     box-shadow: #0000002f 10px 10px 10px;
+    
 }
 .boton{
     box-shadow: #0000002f 10px 10px 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    overflow: hidden;
+    position: relative;
+    display: block;
+    border-radius: 5px;
+}
+.boton:hover{
+    scale: 1.1;
+    background-color: rgb(37, 37, 37);
+    color: white;
+}
+footer{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.301);
+}
+footer ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+footer ul li{
+    margin: 10px;
+    list-style: none;
 }
