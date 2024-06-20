@@ -7,8 +7,10 @@ header{
     background-image: linear-gradient(to right top, #272727, #272431, #28213a, #2a1c43, #2d164a);
     color: white;
 }
-header h1 {
-    margin: 20px;
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 body{
     background-color: rgb(34, 34, 34);
@@ -18,20 +20,8 @@ main{
     margin: 20px;
     color: white;
 }
-section{
-    color: white;
-}
-section li {
-    list-style: none;
-}
-.disenoWeb {
-    background-color: rgb(22, 22, 22);
-    padding: 10px;
-    width: 30%;
-    border-style: none;
-    border-radius: 20px;
-    box-shadow: #0000002f 10px 10px 10px;
-    
+.encabezado{
+    text-align: center;
 }
 .boton{
     box-shadow: #0000002f 10px 10px 10px;
@@ -44,7 +34,7 @@ section li {
 }
 .boton:hover{
     scale: 1.1;
-    background-color: rgb(37, 37, 37);
+    background-color: #C40500;
     color: white;
 }
 footer{
@@ -61,3 +51,42 @@ footer ul li{
     margin: 10px;
     list-style: none;
 }
+.navbar nav ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    vertical-align: middle;
+}
+.navbar nav ul li a {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    color: white;
+    margin-left: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+.carrito-item {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+.servicio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px;
+}
+#total{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-size: 18px;
+}
+
+

@@ -24,19 +24,9 @@ ul.appendChild(liImagen);
 img.style.width = "100px";
 
 for (const link of links) {
-    const li = document.createElement('li');
-    const a = document.createElement('a');
-    a.href = `${link.toLowerCase()}.html`;
-    a.textContent = link;
-    li.appendChild(a);
+    const li = document.createElement ('li');
+    li.innerHTML = `<a href="${link.toLowerCase()}.html" >${link}</a>`;
     ul.appendChild(li);
-    a.addEventListener('mouseover', () => {
-        a.style.fontSize = '22px';
-    });
-
-    a.addEventListener('mouseout', () => {
-        a.style.fontSize = '20px';
-    })
 }
 
 /************************************* */
