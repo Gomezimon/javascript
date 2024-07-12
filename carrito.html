@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora de Presupuesto</title>
+    <title>T-Shirt 10 | Carrito</title>
+    <link rel="icon" href="assets/img/logoIcon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -12,14 +13,14 @@
     </header>
     <main>
         <div class="encabezado">
-            <h1>Desarrollo Web</h1>
-            <p>Selecciona los items que necesites para tu proyecto</p>
+            <h1>Tu carrito de compras</h1>
         </div>
-        <br>
-        <div id="lista-servicios"></div>
-        <h2>Servicios seleccionados</h2>
         <div id="cart"></div>
         <div id="total"></div>
+        <div class="contenedorPagar">
+            <button id="btPagar" class="botonPagar">Pagar</button>
+            <button id="btVaciar" class="botonPagar">Vaciar Carrito</button>
+        </div>
     </main>
     <footer>
         <ul>
@@ -27,6 +28,8 @@
             <li>Todos los derechos reservados</li>
         </ul>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/carrito.js"></script>
+    <script src="js/navegacion.js"></script>
 </body>
 </html>
