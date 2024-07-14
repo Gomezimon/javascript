@@ -19,15 +19,110 @@ header {
     background-image: linear-gradient(to right top, #272727, #272431, #28213a, #2a1c43, #2d164a);
     color: white;
 }
-#unsplashImg{
+
+/*grid inicio*/
+.gridContainer{
     display: flex;
     justify-content: center;
     align-items: center;
-    object-fit: cover;
-    width: 100%;
 }
 
+.grid{
+    display: grid;
+    width: 57%;
+    height: 70%;
+    grid-template-columns:256px 161px 172px 182px;/*esta propiedad declara las columnas, 12 columnas es lo maximo que podemos declarar**/
+    /*se puede usar el termino "1fr 1fr 1fr 1fr" y dividira en 4 partes iguales automaticamente*/
+    grid-template-rows: 162px 132px 144px; /**no hay limites de filas**/
+    grid-template-areas: 
+    "section1 section2 section2 section3"
+    "section1 section4 section5 section6"
+    "section7 section7 section7 section6"
+    ;
+    gap: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.grid section{
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+    position: relative;
+    display: block;
+    box-shadow: 5px 5px 5px #2525257e;
+}
+.grid section img{
+    transform-origin: center;
+    transition: transform 0.4s ease-in-out;
+    overflow: hidden;
+    object-fit: cover;
+}
+.grid section:hover img{
+    transform: scale(1.5);
+}
+.grid figure{
+    overflow: hidden;
+}
+.section1 {
+    grid-area: section1;
+    border-radius: 40px 0 0 0;
+}
+.section1 img{
+    width: 100%;
+    height: 400px;
+}
+.section2 {
+    grid-area: section2;
+}
+.section2 img{
+    width: 100%;
+    height: 400px;
+}
+.section3 {
+    grid-area: section3;
+}
+.section3 img {
+    width: 100%;
+    height: 400px;
+}
+.section4 {
+    grid-area: section4;
+    object-fit: contain;
+}
+.section4 img {
+    width: 100%;
+    height: 400px;
+}
+.section5 {
+    grid-area: section5;
+}
+.section5 img {
+    width: 100%;
+    height: 400px;
+}
+.section6 {
+    grid-area: section6;
+    border-radius: 0 0 40px 0;
+}
+.section6 img {
+    width: 100%;
+    height: 400px;
+}
+.section7 {
+    grid-area: section7;
+    object-fit: contain;
+}
+.section7 img {
+    width: 100%;
+    height: 400px;
+}
 
+.randomImg{
+    object-fit: contain;
+    overflow: hidden;
+}
 .navbar {
     display: flex;
     flex-direction: row;
